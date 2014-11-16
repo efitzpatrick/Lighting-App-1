@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.student.lightingapp1.Review">
+
+    <VideoView
+        android:layout_gravity = "right"
+        android:id="@+id/vvPlayVideo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="133dp"
+        android:layout_below="@+id/cTimer1" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvBookmarks"
+        android:drawSelectorOnTop="false"
+        android:headerDividersEnabled="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/cTimer1"
+        android:layout_toLeftOf="@+id/cTimer1"
+        android:layout_toRightOf="@+id/vvPlayVideo"/>
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cTimer1"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/bStart1" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:id="@+id/bStart1"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/bPause1"
+        android:layout_above="@+id/vvPlayVideo" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:id="@+id/bClear1"
+        android:singleLine="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/cTimer2"
+        android:layout_above="@+id/vvPlayVideo" />
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cTimer2"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/bStart2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:id="@+id/bStart2"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/bPause2"
+        android:layout_alignBottom="@+id/cTimer2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:id="@+id/bClear2"
+        android:layout_marginRight="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/vvPlayVideo"
+        android:layout_alignEnd="@+id/vvPlayVideo"
+        android:layout_above="@+id/vvPlayVideo" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pause"
+        android:id="@+id/bPause2"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/bClear2"
+        android:layout_alignBottom="@+id/bStart2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pause"
+        android:id="@+id/bPause1"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/bClear1"
+        android:layout_above="@+id/vvPlayVideo" />
+
+
+</RelativeLayout>

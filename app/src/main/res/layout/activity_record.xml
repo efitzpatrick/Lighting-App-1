@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        <FrameLayout
+            android:id="@+id/videoview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+
+
+            <Button
+                android:id="@+id/mybutton"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:text="REC"
+                android:textSize="12dp"
+                android:layout_gravity="center_horizontal|bottom" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="00:00:00"
+                android:id="@+id/tvTime"
+                android:layout_gravity="center_horizontal|top"
+                android:enabled="false"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="video1.mp4"
+                android:id="@+id/tvFileName"
+                android:layout_gravity="left|top"
+                android:linksClickable="true" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exit"
+                android:id="@+id/bExit"
+                android:layout_gravity="right|top" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="1"
+                android:id="@+id/tvSplitNumber"
+                android:layout_gravity="left|bottom"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Split"
+                android:id="@+id/bSplit"
+                android:layout_gravity="right|bottom" />
+
+            <Chronometer
+                android:layout_width="56dp"
+                android:layout_height="46dp"
+                android:id="@+id/cTimer1"
+                android:layout_gravity="center_horizontal|top"
+                android:textSize="20sp" />
+
+
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>
